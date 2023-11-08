@@ -37,7 +37,7 @@ export class ResultModelBase<ResultValueModel = any> {
     }
 
     getResponse() {
-        return { ok: this.ok, status: this.status, value: this.value as ResultValueModel, error: this.error as ErrorResult }
+        return { ok: this.ok, status: this.status, value: this.value as ResultValueModel, error: this.error as ErrorResult } as ResultModel<ResultValueModel>
     }
 }
 
