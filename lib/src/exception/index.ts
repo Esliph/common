@@ -28,10 +28,10 @@ export class ResultException<T = any> extends Error implements ResultExceptionMo
         this.ok = false
         this.value = null
         this.error = {
-            causes,
-            message,
             title: title || this.constructor.name.match(/[A-Z][a-z]+|[0-9]+/g)?.join(' ') || 'Error',
+            message,
             description,
+            causes,
             stack: stack || this.stack || '',
         }
     }
