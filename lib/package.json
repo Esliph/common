@@ -1,6 +1,6 @@
 {
     "name": "@esliph/common",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "",
     "main": "dist/index.js",
     "types": "index.d.ts",
@@ -17,6 +17,11 @@
             "require": "./dist/index.js",
             "import": "./dist/index.js",
             "types": "./index.d.ts"
+        },
+        "./util": {
+            "require": "./util.d.ts",
+            "import": "./util.d.ts",
+            "types": "./util.d.ts"
         },
         "./package.json": "./package.json"
     },
